@@ -1,6 +1,6 @@
 MIT License
 
-Copyright © 2023 Larissa Souza
+Copyright © 2024 Larissa Souza
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

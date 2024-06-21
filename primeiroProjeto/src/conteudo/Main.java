@@ -1,11 +1,8 @@
-//Declarando classes - Convenção PascalCase
 public class Main {
     public static void main(String[] args) {
         System.out.println("Esse é o Screen Match");
         System.out.println("Filme: Aquamarine");
 
-        // Declarando Variáveis - Convenção camelCase
-        // Maioria das empresas usa as variaveis em inglês, não é o caso do curso.
         int anoLancamento;
         anoLancamento = 2006;
 

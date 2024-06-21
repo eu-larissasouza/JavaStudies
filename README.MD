@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/eu-larissasouza/sql_studies?style=flat)
+![GitHub](https://img.shields.io/github/license/eu-larissasouza/JavaStudies?style=flat)
 ![GitHub top language](https://img.shields.io/github/languages/top/eu-larissasouza/JavaStudies?style=flat)
 ![GitHub last commit](https://img.shields.io/github/last-commit/eu-larissasouza/JavaStudies?style=flat)
 ![ViewCount](https://views.whatilearened.today/views/github/eu-larissasouza/JavaStudies.svg?cache=remove)
