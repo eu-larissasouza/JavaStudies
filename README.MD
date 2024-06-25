@@ -27,7 +27,7 @@ Este repositório é dedicado à minha jornada contínua de aprendizado em Java,
    - Plataforma: Alura
    - Descrição: Mergulhe nos estudo dos recursos essenciais da linguagem Java.
    - Projeto: primeiroProjeto
-   - Status: Em Progresso
+   - Status: Finalizado
 
 ## Licença
 
