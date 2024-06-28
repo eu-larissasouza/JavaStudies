@@ -5,7 +5,7 @@
 
 # JavaStudies - Repositório
 
-Bem vindo ao meu repositório de estudos de Java para minha jornada como Desenvolvedora Back-end.
+Bem vindo ao meu repositório de estudos de Java para minha jornada como Desenvolvedora Back-end Java.
 
 Este é meu espaço pessoal para documentar e organizar minha jornada através de projetos em Java e recursos de aprendizagem, como meu centro de conhecimento das formações em Java da Alura
 
@@ -25,9 +25,15 @@ Este repositório é dedicado à minha jornada contínua de aprendizado em Java,
 
 1. **Java: criando a sua primeira aplicação**
    - Plataforma: Alura
-   - Descrição: Mergulhe nos estudo dos recursos essenciais da linguagem Java.
+   - Descrição: Mergulhe nos estudos dos recursos essenciais da linguagem Java.
    - Projeto: primeiroProjeto
    - Status: Finalizado
+
+2. **Java: aplicando a Orientação a Objetos**
+   - Plataforma: Alura
+   - Descrição: Aprenda os conceitos da Orientação a Objetos utilizando o Java.
+   - Projeto: ScreenMatch
+   - Status: Em desenvolvimento
 
 ## Licença
 
