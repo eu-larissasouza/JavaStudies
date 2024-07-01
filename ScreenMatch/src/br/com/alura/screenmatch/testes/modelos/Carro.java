@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.exercs;
+package br.com.alura.screenmatch.testes.modelos;
 
 public class Carro {
    String modelo;
