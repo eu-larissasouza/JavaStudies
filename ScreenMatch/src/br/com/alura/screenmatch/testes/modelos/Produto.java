@@ -2,29 +2,35 @@ package br.com.alura.screenmatch.testes.modelos;
 
 public class Produto {
     private String nome;
-    private double preco;
+    private double precoOriginal;
+    private double precoComDesconto;
+
+    public Produto(){
+
+    }
+
+    public Produto(String nome, double precoOriginal) {
+        this.nome = nome;
+        this.precoOriginal = precoOriginal;
+        this.precoComDesconto = precoOriginal;
+    }
 
     public String getNome() {
         return nome;
     }
 
-    public double getPreco() {
-        return preco;
+    public double getPrecoOriginal() {
+        return precoOriginal;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public void setPreco(double preco) {
-        this.preco = preco;
+    public double getPrecoComDesconto() {
+        return precoComDesconto;
     }
 
     public void aplicarDesconto(double percentual) {
-        System.out.println("Nome: " + nome);
-        System.out.println("Preço inicial: " + preco);
-
-        preco = preco * (1 - (percentual / 100));
-        System.out.println("Novo Preço: " + preco);
+        if (percentual > 0 && percentual <= 100) {
+            double desconto = precoOriginal * (percentual / 100);
+            this.precoComDesconto = precoOriginal - desconto;
+        }
     }
 }
