@@ -1,28 +1,55 @@
 package br.com.alura.screenmatch.testes.modelos;
 
+import java.text.DecimalFormat;
+
 public class Carro {
-   String modelo;
-   int ano;
-   String cor;
+    private String nomeModelo;
+    private double precoAno1;
+    private double precoAno2;
+    private double precoAno3;
 
-   void exibeFichaTecnica() {
-      System.out.println("Modelo do carro: " + modelo);
-      System.out.println("Ano de fabricação: " + ano);
-      System.out.println("Cor: " + cor);
-   }
+    public Carro() {
 
-   int calculaIdade() {
-      return 2024 - ano;
-   }
+    }
 
-   public static void main(String[] args) {
-      Carro meuCarro = new Carro();
+    public void defineNomeModelo(String nomeModelo) {
+        this.nomeModelo = nomeModelo;
+    }
 
-      meuCarro.modelo = "Gol";
-      meuCarro.ano = 2023;
-      meuCarro.cor = "Preto";
+    public void definePrecosMedios(double precoAno1, double precoAno2, double precoAno3) {
+        this.precoAno1 = precoAno1;
+        this.precoAno2 = precoAno2;
+        this.precoAno3 = precoAno3;
+    }
 
-      meuCarro.exibeFichaTecnica();
-      System.out.println("Idade do carro: " + meuCarro.calculaIdade() + " anos");
-   }
+    public double calculaMaiorPreco() {
+        double maiorPreco = precoAno1;
+        if (precoAno2 > maiorPreco) {
+            maiorPreco = precoAno2;
+        }
+        if (precoAno3 > maiorPreco) {
+            maiorPreco = precoAno3;
+        }
+        return maiorPreco;
+    }
+
+    public double calculaMenorPreco() {
+        double menorPreco = precoAno1;
+        if (precoAno2 < menorPreco) {
+            menorPreco = precoAno2;
+        }
+        if (precoAno3 < menorPreco) {
+            menorPreco = precoAno3;
+        }
+        return menorPreco;
+    }
+
+    public void exibirDetalhes(){
+        DecimalFormat df = new DecimalFormat("R$ #,##0.00");
+
+        System.out.println("Modelo: "+nomeModelo);
+        System.out.println("Maior Preço: " +df.format(calculaMaiorPreco()));
+        System.out.println("Menor Preço: " +df.format(calculaMenorPreco()));
+    }
+
 }
