@@ -1,4 +1,6 @@
 import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
+import br.com.alura.screenmatch.calculos.FiltroRecomendacao;
+import br.com.alura.screenmatch.modelos.Episodio;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -22,6 +24,8 @@ public class Principal {
         System.out.println("Total de Avaliações: " + meuFilme.getTotalAvaliacoes());
         System.out.println("Média das Avaliações: " + df.format(meuFilme.retornaMedia()));
 
+        System.out.println();
+
         Serie lost = new Serie();
         lost.setNome("Lost");
         lost.setAnoDeLancamento(2000);
@@ -30,17 +34,39 @@ public class Principal {
         lost.setTemporadas(10);
         lost.setEpisodiosPorTemporada(10);
         lost.setMinutosPorEpisodio(50);
-        System.out.println("Duração para maratonar Lost: " + lost.getDuracaoEmMinutos());
+        System.out.println("Tempo para maratonar Lost: " + lost.getDuracaoEmMinutos());
+
+        System.out.println();
 
         Filme outroFilme = new Filme();
         outroFilme.setNome("Avatar");
         outroFilme.setAnoDeLancamento(2023);
         outroFilme.setDuracaoEmMinutos(200);
 
+        outroFilme.exibeFichaTecnica();
+
         CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+
         calculadora.incluiTempo(meuFilme);
         calculadora.incluiTempo(outroFilme);
         calculadora.incluiTempo(lost);
-        System.out.println(calculadora.getTempoTotal());
+
+        System.out.println("\nTempo para maratonar todos os titulos: " +calculadora.getTempoTotal());
+
+        System.out.println();
+
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
+        System.out.println("Filme: "+ meuFilme.getNome());
+        filtro.filtra(meuFilme);
+
+        System.out.println();
+
+        Episodio episodio = new Episodio();
+        episodio.setNumero(1);
+        episodio.setSerie(lost);
+        episodio.setTotalVisualizacoes(300);
+
+        System.out.println("Episodio "+episodio.getNumero()+" da série "+ episodio.getSerie().getNome());
+        filtro.filtra(episodio);
     }
 }
