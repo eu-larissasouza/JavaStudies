@@ -1,0 +1,11 @@
+Definições: Programação Orientada a Objetos
+======================================================
+
+
+Herança: Imagine que você tem um "modelo" de animal chamado Animal. Esse modelo tem características básicas como nome e peso. Agora, você quer criar um "modelo" específico para um Cachorro e outro para um Gato. Em vez de reescrever tudo do zero, você pode usar a herança!
+
+A herança permite que você crie novos "modelos" (classes) que herdam as características e comportamentos de um "modelo" já existente (classe pai). O Cachorro e o Gato herdam as características de Animal, mas podem ter características e comportamentos próprios.
+
+Reescrita: Imagine que o Animal faz um barulho genérico, mas o Cachorro late e o Gato mia. A reescrita permite que você modifique o comportamento de um método herdado. Você pode "reescrever" o método fazerBarulho em Cachorro e Gato para que eles emitam seus próprios sons.
+
+Polimorfismo: O polimorfismo significa "muitas formas". Ele permite que você use um objeto de uma classe pai como se fosse um objeto da classe filha. Por exemplo, você pode ter uma lista de Animais que contém Cachorros e Gatos. Quando você chama o método fazerBarulho em cada animal da lista, o som que será emitido será específico para cada tipo de animal.
